@@ -515,7 +515,6 @@ func (client *baseClient) RPush(key string, elements []string) (Result[int64], e
 	return handleLongResponse(result)
 }
 
-
 func (client *baseClient) SAdd(key string, members []string) (Result[int64], error) {
 	result, err := client.executeCommand(C.SAdd, append([]string{key}, members...))
 	if err != nil {

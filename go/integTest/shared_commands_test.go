@@ -1247,7 +1247,6 @@ func (suite *GlideTestSuite) TestRPush() {
 	})
 }
 
-
 func (suite *GlideTestSuite) TestSAdd() {
 	suite.runWithDefaultClients(func(client api.BaseClient) {
 		key := uuid.NewString()
